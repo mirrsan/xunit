@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZadatakNeki</name>
+    </assembly>
+    <members>
+        <member name="M:ZadatakNeki.Controllers.KancelarijaController.SveKancelarije">
+            <summary>
+            Akcija koja vraca sve kancelarije
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.KancelarijaController.PoId(System.Int64)">
+            <summary>
+            Akcija koja vraca samo entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.KancelarijaController.Upisivanje(ZadatakNeki.DTO.KancelarijaDTO)">
+            <summary>
+            Akcija koja upisuje novi entitet u bazu
+            </summary>
+            <param name="kancelarija"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.KancelarijaController.IzmenaPodataka(System.Int64,ZadatakNeki.DTO.KancelarijaDTO)">
+            <summary>
+            Akcija koja menja postojeci entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <param name="kDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.KancelarijaController.Brisanje(System.Int64)">
+            <summary>
+            Akcija koja brise entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.KancelarijaController.PretragaPoNazivu(System.String)">
+            <summary>
+            Akcija koja pretrazuje entitet po nazivu kancelarije
+            </summary>
+            <param name="opis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.SveOsobe">
+            <summary>
+            metod koji vraca sve osobe
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.OsobaPoId(System.Int64)">
+            <summary>
+            Akcija koja vraca samo entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.UpisivanjeOsobe(ZadatakNeki.DTO.OsobaDTO)">
+            <summary>
+            Akcija koja upisuje novi entitet u bazu
+            </summary>
+            <param name="osobaInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.IzmenaOsobe(System.Int64,ZadatakNeki.DTO.OsobaDTO)">
+            <summary>
+            Akcija koja menja postojeci entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <param name="noviInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.BrisanjeOsobe(System.Int64)">
+            <summary>
+            Akcija koja brise entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.PretragaPoImenuOsobe(System.String)">
+            <summary>
+            Akcija koja pretrazuje entitet po imenu osobe
+            </summary>
+            <param name="ime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaController.PretragaPoOpisuKancelarije(System.String)">
+            <summary>
+            Akcija koja vraca sve entitete iz date kancelarije
+            </summary>
+            <param name="opisKancelarije"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.Sve">
+            <summary>
+            Akcija koja ispisuje sve OsobaUredjaj objecte iz baze
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.PoId(System.Int64)">
+            <summary>
+             akcija koja vraca entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.DodatiNovi(ZadatakNeki.DTO.OsobaUredjajDTO)">
+            <summary>
+             Upisivanje novi OsobaUredjaj object u bazy
+            </summary>
+            <param name="ouNovi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.MenjanjeEntiteta(System.Int64,ZadatakNeki.DTO.OsobaUredjajDTO)">
+            <summary>
+            akcija koja menja entitet sa datim ID sa novi  info
+            </summary>
+            <param name="id"></param>
+            <param name="novi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.BrisanjeEntiteta(System.Int64)">
+            <summary>
+            akcija koja brise entitet iz baze
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.PretragaPoPocetku(System.DateTime)">
+            <summary>
+            akcija koja vraca entitete koji imaju pocetakKoriscenja veci i jednak od unetog
+            </summary>
+            <param name="pocetak"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.OsobaUredjajController.PretragaPocetakKraj(System.DateTime,System.DateTime)">
+            <summary>
+            akcija koja vraca entitet koji ima dat pocetak i kraj koriscenja
+            </summary>
+            <param name="pocetak"></param>
+            <param name="kraj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.Svi">
+            <summary>
+            Akcija koja vraca sve uredjaje
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.PoId(System.Int64)">
+            <summary>
+            akcija koja vraca samo entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.Upisivanje(ZadatakNeki.DTO.UredjajDTO)">
+            <summary>
+            akcija koja upisuje novi entitet u bazu
+            </summary>
+            <param name="uredjajNovi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.IzmenaPodataka(System.Int64,ZadatakNeki.DTO.UredjajDTO)">
+            <summary>
+            akcija koja menja postojeci entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <param name="uredjaj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.Brisanje(System.Int64)">
+            <summary>
+            akcija koja brise entitet koji ima dati ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.PretragaPoImenu(System.String)">
+            <summary>
+            akcija koja pretrazuje entitet po imenu osobe
+            </summary>
+            <param name="naziv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZadatakNeki.Controllers.UredjajController.PretragaUredjajiKojiSeKoriste">
+            <summary>
+            akcija koja vraca uredjaje koji se koriste
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
